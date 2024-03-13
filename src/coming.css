@@ -1,0 +1,16 @@
+.coming{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    
+}
+
+.coming img{
+    height: 50vh;
+    width: 50vw;
+    background-size: cover;
+}

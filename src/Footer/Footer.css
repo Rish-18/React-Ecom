@@ -1,0 +1,151 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500&display=swap');
+
+.services {
+  max-width: 100%;
+  background-color: rgb(169, 168, 168);
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  
+}
+.services h3,p{
+  margin-bottom: 0;
+  font-weight: bold;
+}
+body {
+  background-color: #e2e2e2;
+  font-family: 'Karla', sans-serif;
+}
+.svg-style{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.svg-style .svg{
+  font-size: 45px;
+  padding-right: 10px;
+}
+
+.contain {
+  padding: 50px 0;
+}
+
+.space {
+  margin-bottom: 30px;
+}
+
+.space h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.space ul {
+  padding: 0;
+}
+
+.space ul li {
+  list-style: none;
+}
+
+.space ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    position: relative;
+  }
+  
+  .space ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: black;
+    transition: width 0.3s ease; 
+  }
+  
+  .space ul li a:hover::after {
+    width: 100%;
+  }
+
+.space p {
+  font-size: 16px;
+}
+
+
+/* Style for email input and button */
+.space form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .space input[type='email'] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 8px;
+    max-width: 150px; /* Adjust width as needed */
+  }
+  
+  .space button {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .space button:hover {
+    background-color: #001f3f;
+  }
+  
+
+  @media screen and ((min-width:576px ) and ( max-width:680px)) {
+    .space form {
+      display: flex;
+      flex-direction: column;
+    }
+    .services {
+      flex-direction: column;
+      align-items: flex-start; /* Align items to the left */
+    }
+    .space {
+      text-align: left; /* Left-align text */
+      margin-left: 20px; /* Add left margin */
+      padding: 0 0 0 10px;
+      max-width: fit-content;
+    }
+    
+  }
+@media screen and (max-width: 576px) {
+  .services {
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  .space {
+    text-align: left; /* Left-align text */
+    margin-left: 20px; /* Add left margin */
+    padding: 0 0 0 10px;
+    max-width: fit-content;
+  }
+
+  .space ul li {
+    margin-bottom: 10px;
+  }
+  
+}
+
+@media screen and (max-width: 300px) {
+  .space {
+    margin-bottom: 10px; /* Reduce margin for smaller screens */
+    padding: 0 0 0 10px;
+    max-width: fit-content;
+  }
+}

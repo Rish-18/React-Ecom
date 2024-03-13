@@ -1,0 +1,69 @@
+
+
+
+.contact-back {
+    background-color: #eee;
+    padding: 20px;
+  }
+  
+  .c-container {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .c-form .row {
+    margin-bottom: 20px;
+  }
+  
+  .c-form input,
+  .c-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .c-form .error-msg {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .c-form button.submit {
+    border: 1px solid darkblue;
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    .c-container {
+      width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .c-form input,
+    .c-form textarea {
+      width: 100%;
+    }
+  }
+  
+  
+@media screen and (min-width: 300px) {
+    .c-form input,
+    .c-form textarea {
+      margin-right: 0;
+    }
+  
+    .c-form input,
+    .c-form textarea {
+      margin-bottom: 10px;
+    }
+  }
+  

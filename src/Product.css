@@ -1,0 +1,154 @@
+
+.icard{
+    display: grid;
+    height: auto;
+    width: 1320 px;
+    justify-content: space-evenly;
+    /* row-gap: 10px; */
+    padding-bottom: 40px;
+    gap: 0;
+}
+.icard img{
+    width: fit-content;
+    height: 400px;
+}
+.icard img:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+.product-name{
+    padding-top: 10px;
+}
+.add-to-cart-btn{
+    margin-top: 8px;
+    padding: auto;
+}
+/* ------------------------------  */
+.new-container{
+    padding: 0;
+}
+.subheading{
+    font-size: .8125rem;
+    letter-spacing: .4em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.left p{
+    font-weight: 500;
+}
+.left button {
+    padding: 8px 20px;
+    background-color: white;
+    color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+.left button:hover{
+    color: white;
+    background-color: gray;
+    animation: colorChange 0.5s ease;
+}
+
+@keyframes colorChange {
+    0% {
+      background-color: white;
+    }
+    100% {
+      background-color: gray;
+    }
+  }
+  
+
+
+.hoodies .container {
+    max-width: 100%;
+    flex-wrap:wrap ;
+
+    .new-container{
+        
+        max-width: 1480px;
+    }
+}
+
+/* Add media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  .icard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .icard img {
+    width: 100%;
+    height: auto;
+  }
+  .new-container {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .left,
+  .right {
+    text-align: center;
+    flex: 1 1 100%;
+  }
+  .left button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  .right img {
+    width: 100%; /* Make image take full width */
+    height: auto; /* Maintain aspect ratio */
+}
+.add-to-cart-btn{
+  margin-top: 8px;
+  padding: 5px;
+}
+}
+@media screen and (max-width:600px )  {
+  
+  .hoodies .right img{
+    height: 100vh;
+    aspect-ratio: 9/14;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product-name {
+    font-size: 14px;
+  }
+  .add-to-cart-btn {
+    font-size: 12px;
+  }
+  .subheading {
+    font-size: 12px;
+  }
+  .left{
+    margin: 10px;
+    padding: 10px;
+  }
+  .hoodies .right img{
+    height: 100vh;
+    aspect-ratio: 1/2;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hoodies .right img{
+    height: 100vh;
+    aspect-ratio: 3/8;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hoodies .right img{
+    height: 100vh;
+    aspect-ratio: 3/10;
+  }
+}
+@media screen and (max-width: 340px) {
+  .hoodies .right img{
+    height: 100vh;
+    aspect-ratio: 3/12;
+  }
+}
